@@ -10327,7 +10327,7 @@ var ZA_PATCH = {
         },
         weightkg: 99.0,
         abilities: {
-            '0': 'Brass Bomd'
+            '0': 'Brass Bond'
         },
         baseSpecies: 'Falinks'
     },

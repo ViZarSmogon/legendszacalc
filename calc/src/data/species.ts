@@ -10314,7 +10314,7 @@ const ZA_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     },
     weightkg: 99.0,
     abilities: {
-      '0': 'Brass Bomd',
+      '0': 'Brass Bond',
     },
     baseSpecies: 'Falinks',
   },

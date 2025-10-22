@@ -514,7 +514,7 @@ export function calculateSMSSSV(
 
   const fixedDamage = handleFixedDamageMoves(attacker, move);
   if (fixedDamage) {
-    if (attacker.hasAbility('Parental Bond')) {
+    if (attacker.hasAbility('Parental Bond', 'Brass Bond')) {
       result.damage = [fixedDamage, fixedDamage];
       desc.attackerAbility = attacker.ability;
     } else {
@@ -664,6 +664,13 @@ export function calculateSMSSSV(
   if (attacker.hasAbility('Parental Bond') && move.hits === 1 && !isSpread) {
     const child = attacker.clone();
     child.ability = 'Parental Bond (Child)' as AbilityName;
+    checkMultihitBoost(gen, child, defender, move, field, desc);
+    childDamage = calculateSMSSSV(gen, child, defender, move, field).damage as number[];
+    desc.attackerAbility = attacker.ability;
+  }
+  if (attacker.hasAbility('Brass Bond') && move.hits === 1 && !isSpread) {
+    const child = attacker.clone();
+    child.ability = 'Brass Bond (Soldier)' as AbilityName;
     checkMultihitBoost(gen, child, defender, move, field, desc);
     childDamage = calculateSMSSSV(gen, child, defender, move, field).damage as number[];
     desc.attackerAbility = attacker.ability;
@@ -856,7 +863,7 @@ export function calculateBasePowerSMSSSV(
     desc.moveBP = basePower;
     break;
   case 'Assurance':
-    basePower = move.bp * (defender.hasAbility('Parental Bond (Child)') ? 2 : 1);
+    basePower = move.bp * (defender.hasAbility('Parental Bond (Child)', 'Brass Bond (Soldier') ? 2 : 1);
     // NOTE: desc.attackerAbility = 'Parental Bond' will already reflect this boost
     break;
   case 'Wake-Up Slap':
@@ -1667,6 +1674,9 @@ function calculateBaseDamageSMSSSV(
   if (attacker.hasAbility('Parental Bond (Child)')) {
     baseDamage = pokeRound(OF32(baseDamage * 1024) / 4096);
   }
+  if (attacker.hasAbility('Brass Bond (Soldier)')) {
+    baseDamage = pokeRound(OF32(baseDamage * 1228) / 4096);
+  }
 
   if (
     field.hasWeather('Sun') && move.named('Hydro Steam') && !attacker.hasItem('Utility Umbrella')
@@ -1747,7 +1757,7 @@ export function calculateFinalModsSMSSSV(
       defender.curHP() === defender.maxHP() &&
       hitCount === 0 &&
       (!field.defenderSide.isSR && (!field.defenderSide.spikes || defender.hasType('Flying')) ||
-      defender.hasItem('Heavy-Duty Boots')) && !attacker.hasAbility('Parental Bond (Child)')
+      defender.hasItem('Heavy-Duty Boots')) && !attacker.hasAbility('Parental Bond (Child)', 'Brass Bond (Soldier)')
   ) {
     finalMods.push(2048);
     desc.defenderAbility = defender.ability;

@@ -79,7 +79,7 @@ function getRecovery(gen, attacker, defender, move, damage, notation) {
         recovery[0] = recovery[1] = average - attacker.curHP();
     }
     if (move.drain) {
-        if (attacker.hasAbility('Parental Bond') || move.hits > 1) {
+        if (attacker.hasAbility('Parental Bond', 'Brass Bond') || move.hits > 1) {
             _b = __read((0, result_1.multiDamageRange)(damage), 2), minD = _b[0], maxD = _b[1];
         }
         var percentHealed = move.drain[0] / move.drain[1];
