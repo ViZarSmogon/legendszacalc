@@ -344,7 +344,6 @@ const SV = SS.concat([
   'Brass Bond',
   'Contrarian',
   'Ion Battery',
-  'Leader of the Pride',
 ]);
 
 export const ABILITIES = [[], RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];

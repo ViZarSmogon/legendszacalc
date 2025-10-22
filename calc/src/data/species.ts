@@ -10389,7 +10389,7 @@ const ZA_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     },
     weightkg: 40.0,
     abilities: {
-      '0': 'Battle Bond',
+      '0': 'Technician',
     },
     baseSpecies: 'Greninja',
   },
@@ -10465,7 +10465,7 @@ const ZA_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     },
     weightkg: 93.3,
     abilities: {
-      '0': 'Leader of the Pride',
+      '0': 'Drought',
     },
     baseSpecies: 'Pyroar',
   },

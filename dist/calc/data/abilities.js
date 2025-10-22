@@ -375,7 +375,6 @@ var SV = SS.concat([
     'Brass Bond',
     'Contrarian',
     'Ion Battery',
-    'Leader of the Pride',
 ]);
 exports.ABILITIES = [[], RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 var Abilities = (function () {

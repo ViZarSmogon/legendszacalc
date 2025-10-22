@@ -347,7 +347,6 @@ function autosetWeather(ability, i) {
 	switch (ability) {
 	case "Drought":
 	case "Orichalcum Pulse":
-	case "Leader of the Pride":
 		lastAutoWeather[i] = "Sun";
 		$("#sun").prop("checked", true);
 		break;

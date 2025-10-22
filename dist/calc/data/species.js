@@ -10402,7 +10402,7 @@ var ZA_PATCH = {
         },
         weightkg: 40.0,
         abilities: {
-            '0': 'Battle Bond'
+            '0': 'Technician'
         },
         baseSpecies: 'Greninja'
     },
@@ -10478,7 +10478,7 @@ var ZA_PATCH = {
         },
         weightkg: 93.3,
         abilities: {
-            '0': 'Leader of the Pride'
+            '0': 'Drought'
         },
         baseSpecies: 'Pyroar'
     },

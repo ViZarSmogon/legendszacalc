@@ -1477,7 +1477,7 @@ export function calculateAtModsSMSSSV(
   if (
     (attacker.hasAbility('Hadron Engine') && move.category === 'Special' &&
       field.hasTerrain('Electric')) ||
-    (((attacker.hasAbility('Orichalcum Pulse') && move.category === 'Physical') || (attacker.hasAbility('Leader of the Pride') && move.category === 'Special')) &&
+    (attacker.hasAbility('Orichalcum Pulse') && move.category === 'Physical' &&
       field.hasWeather('Sun', 'Harsh Sunshine') && !attacker.hasItem('Utility Umbrella'))
   ) {
     atMods.push(5461);
