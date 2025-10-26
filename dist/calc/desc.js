@@ -462,6 +462,10 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
         damage -= Math.floor(defender.maxHP() / 8);
         texts.push('Sticky Barb damage');
     }
+    else if (defender.hasAbility('Ange') && !healBlock) {
+        damage += Math.floor(defender.maxHP() / 12);
+        texts.push('Ange recovery');
+    }
     if (field.defenderSide.isSeeded) {
         if (!defender.hasAbility('Magic Guard')) {
             damage -= Math.floor(defender.maxHP() / (gen.num >= 2 ? 8 : 16));

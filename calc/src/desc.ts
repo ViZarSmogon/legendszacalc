@@ -641,6 +641,9 @@ function getEndOfTurn(
     !defender.hasAbility('Magic Guard', 'Klutz')) {
     damage -= Math.floor(defender.maxHP() / 8);
     texts.push('Sticky Barb damage');
+  } else if (defender.hasAbility('Ange') && !healBlock) {
+    damage += Math.floor(defender.maxHP() / 12);
+    texts.push('Ange recovery');
   }
 
   if (field.defenderSide.isSeeded) {
