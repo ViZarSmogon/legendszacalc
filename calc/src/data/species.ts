@@ -5547,7 +5547,7 @@ const XY_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Electric', 'Dragon'],
     bs: {hp: 90, at: 95, df: 105, sa: 165, sd: 110, sp: 45},
     weightkg: 61.5,
-    abilities: {0: 'Mold Breaker'},
+    abilities: {0: 'Fluffy'},
     baseSpecies: 'Ampharos',
   },
   'Audino-Mega': {
@@ -10389,7 +10389,7 @@ const ZA_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     },
     weightkg: 40.0,
     abilities: {
-      '0': 'Technician',
+      '0': 'Protean',
     },
     baseSpecies: 'Greninja',
   },

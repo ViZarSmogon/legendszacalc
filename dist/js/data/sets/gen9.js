@@ -2401,6 +2401,9 @@ var SETDEX_SV = {
     "ZU Defensive Pivot": {"ability":"Levitate","item":"Assault Vest","nature":"Sassy","teraType":"Steel","ivs":{"sp":0},"evs":{"hp":252,"df":4,"sd":252},"moves":["Knock Off","U-turn","Discharge","Dragon Tail"]},
     "ZU Coil": {"ability":"Levitate","item":"Leftovers","nature":"Careful","teraType":"Steel","evs":{"hp":252,"sd":252,"sp":4},"moves":["Coil","Supercell Slam","Drain Punch","Knock Off"]}
   },
+  "Eelektross-Mega": {
+    "Legends Z-A Offensive Pivot": {"ability":"Ion Battery","item":"Eelektrossite","nature":"Modest","teraType":"Electric","ivs":{"sp":0},"evs":{"sa":252,"pd":4,"sp":252},"moves":["Volt Switch","Dragon Pulse","Flamethrower","Giga Drain"]},
+  },
   "Lampent": {
     "NFE Choice Item": {"ability":"Flash Fire","item":"Choice Scarf","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Trick","Fire Blast","Shadow Ball","Energy Ball"]},
     "NFE Calm Mind": {"ability":"Flash Fire","item":"Heavy-Duty Boots","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Calm Mind","Fire Blast","Shadow Ball","Substitute"]}
@@ -2772,12 +2775,19 @@ var SETDEX_SV = {
     "National Dex Defensive": {"ability":"Bulletproof","item":"Rocky Helmet","nature":"Impish","evs":{"hp":252,"df":252,"sd":4},"moves":["Spikes","Body Press","Knock Off","Synthesis"]},
     "Almost Any Ability Flame Body": {"ability":"Flame Body","item":"Leftovers","nature":"Impish","ivs":{"at":0},"evs":{"hp":252,"df":228,"sp":28},"moves":["Body Press","Synthesis","Spikes","Iron Defense"]}
   },
+  "Chesnaught-Mega": {
+    "Legends Z-A IronPress": {"ability":"Protective Thorns","item":"Chesnaughtite","nature":"Impish","teraType":"Grass","evs":{"hp":252,"df":204,"sp":52},"moves":["Body Press","Knock Off","Synthesis","Iron Defense"]},
+    "Legends Z-A Physically Defensive": {"ability":"Protective Thorns","item":"Chesnaughtite","nature":"Impish","teraType":"Grass","evs":{"hp":252,"df":252,"sd":4},"moves":["Body Press","Knock Off","Synthesis","Spikes"]},
+  },
   "Braixen": {
     "NFE Calm Mind": {"ability":"Blaze","item":"Eviolite","nature":"Timid","evs":{"hp":4,"sa":252,"sp":252},"moves":["Calm Mind","Flamethrower","Psychic","Substitute"]}
   },
   "Delphox": {
     "NU Nasty Plot": {"ability":"Blaze","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Fairy","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Fire Blast","Psyshock","Focus Blast"]},
     "PU Nasty Plot": {"ability":"Blaze","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Fairy","evs":{"df":4,"sa":252,"sp":252},"moves":["Nasty Plot","Fire Blast","Psyshock","Encore"]}
+  },
+  "Delphox-Mega": {
+    "Legends Z-A Nasty Plot": {"ability":"Levitate","item":"Delphoxite","nature":"Timid","teraType":"Fire","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Fire Blast","Psychic","Focus Blast"]},
   },
   "Frogadier": {
     "NFE Spikes Pivot": {"ability":"Protean","item":"Heavy-Duty Boots","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Spikes","Surf","Ice Beam","U-turn"]},
@@ -2797,6 +2807,10 @@ var SETDEX_SV = {
     "National Dex Monotype Choice Scarf (Water)": {"ability":"Protean","item":"Choice Scarf","nature":"Naive","evs":{"at":4,"sa":252,"sp":252},"moves":["Dark Pulse","Gunk Shot","Ice Beam","U-turn"]},
     "1v1 Life Orb": {"ability":"Protean","item":"Life Orb","nature":"Hasty","evs":{"at":252,"sa":8,"sd":64,"sp":184},"moves":["Gunk Shot","Hydro Cannon","U-turn","Shadow Sneak"]},
     "Balanced Hackmons Showdown Usage": {"ability":"Sniper","item":"Choice Band","nature":"Hasty","evs":{"hp":252,"at":252,"df":252,"sa":252,"sd":252,"sp":252},"moves":["Wicked Blow","Surging Strikes","Flower Trick","Water Spout"]}
+  },
+  "Greninja-Mega": {
+    "Legends Z-A Nasty Plot": {"ability":"Protean","item":"Greninjite","nature":"Timid","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Hydro Pump","Dark Pulse","Sludge Wave","Nasty Plot"]},
+    "Legends Z-A All-out Attacker": {"ability":"Protean","item":"Greninjite","nature":"Timid","teraType":"Water","evs":{"sa":252,"sd":4,"sp":252},"moves":["Hydro Pump","Dark Pulse","Sludge Wave","Ice Beam"]},
   },
   "Diggersby": {
     "National Dex RU Swords Dance": {"ability":"Huge Power","item":"Life Orb","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Return","Earthquake","Quick Attack"]},
@@ -2877,6 +2891,12 @@ var SETDEX_SV = {
     "NU Choice Specs": {"ability":"Adaptability","item":"Choice Specs","nature":"Modest","teraType":"Poison","evs":{"hp":80,"sa":252,"sp":176},"moves":["Sludge Wave","Draco Meteor","Focus Blast","Flip Turn"]},
     "Monotype Specially Defensive (Dragon)": {"ability":"Adaptability","item":"Black Sludge","nature":"Calm","evs":{"hp":248,"df":8,"sd":252},"moves":["Sludge Bomb","Flip Turn","Toxic Spikes","Protect"]},
     "National Dex Monotype Specially Defensive (Dragon)": {"ability":"Adaptability","item":"Black Sludge","nature":"Sassy","ivs":{"sp":24},"evs":{"hp":248,"df":8,"sd":252},"moves":["Toxic Spikes","Gunk Shot","Flip Turn","Protect"]}
+  },
+  "Dragalge-Mega": {
+    "Legends Z-A Defensive Pivot": {"ability":"Regenerator","item":"Dragalgite","nature":"Sassy","teraType":"Poison","evs":{"hp":252,"df":4,"sd":252},"moves":["Sludge Bomb","Draco Meteor","Toxic Spikes","Flip Turn"]},
+  },
+  "Barbaracle-Mega": {
+    "Legends Z-A Shell Smash Sweeper": {"ability":"Tough Claws","item":"Barbaracite","nature":"Adamant","teraType":"Rock","evs":{"at":252,"sd":4,"sp":252},"moves":["Stone Edge","Close Combat","Liquidation","Shell Smash"]}
   },
   "Clawitzer": {
     "ZU Choice Specs": {"ability":"Mega Launcher","item":"Choice Specs","nature":"Modest","teraType":"Dragon","ivs":{"at":0},"evs":{"df":4,"sa":252,"sp":252},"moves":["Water Pulse","Dragon Pulse","Aura Sphere","Dark Pulse"]}
@@ -5421,7 +5441,8 @@ var SETDEX_SV = {
     "National Dex RU Showdown Usage": {"ability":"Mummy","item":"Leftovers","nature":"Sassy","evs":{"hp":248,"sa":8,"sd":252},"moves":["Will-O-Wisp","Hex","Shadow Ball","Trick Room"]}
   },
   "Ampharos-Mega": {
-    "National Dex RU Showdown Usage": {"ability":"Mold Breaker","item":"Ampharosite","nature":"Quiet","evs":{"hp":248,"sa":252,"sd":8},"moves":["Dragon Pulse","Thunderbolt","Charge Beam","Focus Blast"]}
+    "Legends Z-A Special Attacker": {"ability":"Fluffy","item":"Ampharosite","nature":"Modest","evs":{"hp":248,"sa":252,"sd":8},"moves":["Dragon Pulse","Thunderbolt","Volt Switch","Focus Blast"]},
+	"National Dex RU Showdown Usage": {"ability":"Mold Breaker","item":"Ampharosite","nature":"Quiet","evs":{"hp":248,"sa":252,"sd":8},"moves":["Dragon Pulse","Thunderbolt","Charge Beam","Focus Blast"]}
   },
   "Ampharos": {
     "National Dex RU Showdown Usage": {"ability":"Static","item":"Ampharosite","nature":"Quiet","evs":{"hp":248,"sa":252,"sd":8},"moves":["Dragon Pulse","Thunderbolt","Charge Beam","Focus Blast"]}
