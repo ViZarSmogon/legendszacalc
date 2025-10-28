@@ -10126,7 +10126,7 @@ const ZA_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     },
     weightkg: 69.6,
     abilities: {
-      '0': 'Flash Fire',
+      '0': 'Magic Guard',
     },
     baseSpecies: 'Chandelure',
   },

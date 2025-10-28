@@ -415,6 +415,10 @@ var SETDEX_SV = {
     "National Dex RU Offensive": {"ability":"Analytic","item":"Life Orb","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Hydro Pump","Ice Beam","Thunderbolt","Rapid Spin"]},
     "National Dex RU Defensive": {"ability":"Natural Cure","item":"Heavy-Duty Boots","nature":"Timid","evs":{"hp":252,"sa":4,"sp":252},"moves":["Scald","Recover","Teleport","Rapid Spin"]}
   },
+  "Starmie-Mega": {
+    "Legends Z-A Bulk Up": {"ability":"Pure Power","item":"Starminite","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Liquidation","Zen Headbutt","Frustration","Bulk Up"]},
+    "Legends Z-A Offensive": {"ability":"Pure Power","item":"Starminite","nature":"Jolly","evs":{"at":252,"sd":4,"sp":252},"moves":["Liquidation","Zen Headbutt","Flip Turn","Rapid Spin"]}
+  },
   "Scyther": {
     "NU Swords Dance": {"ability":"Technician","item":"Eviolite","nature":"Jolly","teraType":"Electric","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Dual Wingbeat","Close Combat","Trailblaze"]},
     "NU Offensive Pivot": {"ability":"Technician","item":"Heavy-Duty Boots","nature":"Jolly","teraType":"Electric","evs":{"at":252,"sd":4,"sp":252},"moves":["U-turn","Dual Wingbeat","Close Combat","Swords Dance"]}
@@ -883,6 +887,9 @@ var SETDEX_SV = {
     "Almost Any Ability Physical Wall": {"ability":"Fluffy","item":"Leftovers","nature":"Bold","evs":{"hp":252,"df":252,"sd":4},"moves":["Body Press","Spikes","Roost","Whirlwind"]},
     "Ubers UU Physical Wall": {"ability":"Sturdy","item":"Leftovers","nature":"Bold","teraType":"Water","ivs":{"at":0},"evs":{"hp":248,"df":252,"sd":8},"moves":["Body Press","Iron Defense","Roost","Spikes"]},
     "CAP Showdown Usage": {"ability":"Sturdy","item":"Rocky Helmet","nature":"Impish","teraType":"Dragon","evs":{"hp":252,"df":160,"sp":96},"moves":["Roost","Body Press","Iron Defense","Spikes"]}
+  },
+  "Skarmory-Mega": {
+    "Legends Z-A Swords Dance": {"ability":"Tough Claws","item":"Skarmorite","nature":"Jolly","teraType":"Steel","evs":{"atk":252,"sd":4,"sp":252},"moves":["Brave Bird","Iron Head","Drill Run","Swords Dance"]},
   },
   "Houndoom": {
     "National Dex RU Nasty Plot": {"ability":"Flash Fire","item":"Houndoominite","nature":"Timid","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Nasty Plot","Dark Pulse","Fire Blast","Sludge Bomb"]},
@@ -1829,6 +1836,9 @@ var SETDEX_SV = {
     "ZU Hazard Lead": {"ability":"Cursed Body","item":"Focus Sash","nature":"Timid","teraType":"Ghost","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Spikes","Taunt","Destiny Bond","Icy Wind"]},
     "ZU Utility Spikes": {"ability":"Cursed Body","item":"Heavy-Duty Boots","nature":"Jolly","teraType":"Ghost","evs":{"at":252,"sd":4,"sp":252},"moves":["Triple Axel","Poltergeist","Taunt","Spikes"]}
   },
+  "Froslass-Mega": {
+    "Legends Z-A Nasty Plot": {"ability":"Snow Warning","item":"Froslassite","nature":"Timid","teraType":"Ice","evs":{"sa":252,"sd":4,"sp":252},"moves":["Blizzard","Shadow Ball","Thunderbolt","Nasty Plot"]},
+  },
   "Rotom": {
     "ZU Choice Scarf": {"ability":"Levitate","item":"Choice Scarf","nature":"Timid","teraType":"Electric","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Thunderbolt","Shadow Ball","Volt Switch","Trick"]},
     "ZU Nasty Plot": {"ability":"Levitate","item":"Leftovers","nature":"Timid","teraType":"Steel","ivs":{"at":0},"evs":{"df":4,"sa":252,"sp":252},"moves":["Nasty Plot","Thunderbolt","Shadow Ball","Substitute"]}
@@ -2216,7 +2226,7 @@ var SETDEX_SV = {
     "Doubles OU Showdown Usage": {"ability":"Sand Rush","item":"Focus Sash","nature":"Adamant","teraType":"Ghost","evs":{"at":252,"sd":4,"sp":252},"moves":["Iron Head","Protect","Earthquake","Swords Dance"]}
   },
   "Excadrill-Mega": {
-    "Legends Z-A": {"ability":"Mold Breaker","item":"Excadrite","nature":"Jolly","teraType":"Dragon","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Earthquake","Iron Head","Rapid Spin"]},
+    "Legends Z-A Swords Dance": {"ability":"Mold Breaker","item":"Excadrite","nature":"Jolly","teraType":"Dragon","evs":{"at":252,"sd":4,"sp":252},"moves":["Swords Dance","Earthquake","Iron Head","Rapid Spin"]},
   },
   "Timburr": {
     "LC Physical Attacker": {"level":5,"ability":"Iron Fist","item":"Eviolite","nature":"Adamant","teraType":"Steel","evs":{"at":196,"df":156,"sd":156},"moves":["Drain Punch","Knock Off","Mach Punch","Ice Punch"]}
@@ -2421,6 +2431,10 @@ var SETDEX_SV = {
     "National Dex RU Calm Mind": {"ability":"Flash Fire","item":"Heavy-Duty Boots","nature":"Timid","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Flamethrower","Shadow Ball","Calm Mind","Substitute"]},
     "National Dex RU Substitute Attacker": {"ability":"Flash Fire","item":"Heavy-Duty Boots","nature":"Timid","ivs":{"at":0},"evs":{"sa":252,"sd":4,"sp":252},"moves":["Flamethrower","Hex","Substitute","Will-O-Wisp"]},
     "RU Showdown Usage": {"ability":"Flame Body","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Grass","evs":{"sa":252,"sd":4,"sp":252},"moves":["Shadow Ball","Energy Ball","Flamethrower","Tera Blast"]}
+  },
+  "Chandelure-Mega": {
+    "Legends Z-A Special Attacker": {"ability":"Magic Guard","item":"Chandelurite","nature":"Modest","teraType":"Fire","evs":{"sa":252,"sd":4,"sp":252},"moves":["Fire Blast","Shadow Ball","Energy Ball","Will-O-Wisp"]},
+    "Legends Z-A Calm Mind": {"ability":"Magic Guard","item":"Chandelurite","nature":"Timid","teraType":"Fire","evs":{"hp":252,"sd":4,"sp":252},"moves":["Flamethrower","Hex","Will-O-Wisp","Calm Mind"]},
   },
   "Axew": {
     "LC Dragon Dance": {"level":5,"ability":"Unnerve","item":"Eviolite","nature":"Adamant","teraType":"Ground","evs":{"at":220,"df":116,"sp":140},"moves":["Dragon Dance","Outrage","Stomping Tantrum","First Impression"]}
@@ -2839,6 +2853,10 @@ var SETDEX_SV = {
   },
   "Pyroar": {
     "ZU Special Attacker": {"ability":"Unnerve","item":"Heavy-Duty Boots","nature":"Timid","teraType":"Ghost","ivs":{"at":0},"evs":{"df":4,"sa":252,"sp":252},"moves":["Fire Blast","Hyper Voice","Taunt","Will-O-Wisp"]}
+  },
+  "Floette-Mega": {
+    "Legends Z-A Special Attacker": {"ability":"Ange","item":"Floettite","nature":"Timid","teraType":"Fairy","ivs":{"at":0},"evs":{"df":4,"sa":252,"sp":252},"moves":["Moonblast","Psychic","Light of Ruin","Calm Mind"]},
+    "Legends Z-A Calm Mind": {"ability":"Ange","item":"Floettite","nature":"Bold","teraType":"Fairy","ivs":{"at":0},"evs":{"hp":248,"df":252,"sd":8},"moves":["Moonblast","Protect","Calm Mind","Calm Mind"]},
   },
   "Florges": {
     "NU Choice Specs": {"ability":"Flower Veil","item":"Choice Specs","nature":"Modest","teraType":"Ground","ivs":{"at":0},"evs":{"df":4,"sa":252,"sp":252},"moves":["Moonblast","Psychic","Trick","Tera Blast"]},

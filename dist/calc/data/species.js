@@ -10139,7 +10139,7 @@ var ZA_PATCH = {
         },
         weightkg: 69.6,
         abilities: {
-            '0': 'Flash Fire'
+            '0': 'Magic Guard'
         },
         baseSpecies: 'Chandelure'
     },
