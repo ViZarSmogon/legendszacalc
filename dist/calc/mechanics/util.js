@@ -52,7 +52,6 @@ function isGrounded(pokemon, field) {
     return (field.isGravity || pokemon.hasItem('Iron Ball') ||
         (!pokemon.hasType('Flying') &&
             !pokemon.hasAbility('Levitate') &&
-            !pokemon.hasAbility('Ion Battery') &&
             !pokemon.hasItem('Air Balloon')));
 }
 exports.isGrounded = isGrounded;
@@ -253,9 +252,6 @@ function checkIntimidate(gen, source, target) {
         if (target.hasAbility('Contrary', 'Defiant', 'Guard Dog')) {
             target.boosts.atk = Math.min(6, target.boosts.atk + 1);
         }
-        else if (target.hasAbility('Contrarian')) {
-            target.boosts.atk = Math.min(6, target.boosts.atk + 2);
-        }
         else if (target.hasAbility('Simple')) {
             target.boosts.atk = Math.max(-6, target.boosts.atk - 2);
         }
@@ -337,13 +333,11 @@ function checkSeedBoost(pokemon, field) {
         if (field.hasTerrain(terrainSeed)) {
             if (terrainSeed === 'Grassy' || terrainSeed === 'Electric') {
                 pokemon.boosts.def = pokemon.hasAbility('Contrary')
-                    ? Math.max(-6, pokemon.boosts.def - 1) : pokemon.hasAbility('Contrarian') ? Math.max(-6, pokemon.boosts.def - 2)
-                    : Math.min(6, pokemon.boosts.def + 1);
+                    ? Math.max(-6, pokemon.boosts.def - 1) : Math.min(6, pokemon.boosts.def + 1);
             }
             else {
                 pokemon.boosts.spd = pokemon.hasAbility('Contrary')
-                    ? Math.max(-6, pokemon.boosts.spd - 1) : pokemon.hasAbility('Contrarian') ? Math.max(-6, pokemon.boosts.spd - 2)
-                    : Math.min(6, pokemon.boosts.spd + 1);
+                    ? Math.max(-6, pokemon.boosts.spd - 1) : Math.min(6, pokemon.boosts.spd + 1);
             }
             pokemon.item = '';
         }
@@ -379,7 +373,7 @@ function checkMultihitBoost(gen, attacker, defender, move, field, desc, attacker
             desc.attackerAbility = attacker.ability;
         }
         else {
-            if (defender.hasAbility('Contrary', 'Contrarian')) {
+            if (defender.hasAbility('Contrary')) {
                 desc.defenderAbility = defender.ability;
                 if (defender.hasItem('White Herb') && !defenderUsedItem) {
                     desc.defenderItem = defender.item;
@@ -450,7 +444,7 @@ function checkMultihitBoost(gen, attacker, defender, move, field, desc, attacker
         else {
             var stat = move.category === 'Special' ? 'spa' : 'atk';
             var boosts = attacker.boosts[stat];
-            if (attacker.hasAbility('Contrary', 'Contrarian')) {
+            if (attacker.hasAbility('Contrary')) {
                 boosts = Math.min(6, boosts + move.dropsStats);
                 desc.attackerAbility = attacker.ability;
             }

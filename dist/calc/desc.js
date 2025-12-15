@@ -79,7 +79,7 @@ function getRecovery(gen, attacker, defender, move, damage, notation) {
         recovery[0] = recovery[1] = average - attacker.curHP();
     }
     if (move.drain) {
-        if (attacker.hasAbility('Parental Bond', 'Brass Bond') || move.hits > 1) {
+        if (attacker.hasAbility('Parental Bond') || move.hits > 1) {
             _b = __read((0, result_1.multiDamageRange)(damage), 2), minD = _b[0], maxD = _b[1];
         }
         var percentHealed = move.drain[0] / move.drain[1];
@@ -461,10 +461,6 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
         !defender.hasAbility('Magic Guard', 'Klutz')) {
         damage -= Math.floor(defender.maxHP() / 8);
         texts.push('Sticky Barb damage');
-    }
-    else if (defender.hasAbility('Ange') && !healBlock) {
-        damage += Math.floor(defender.maxHP() / 12);
-        texts.push('Ange recovery');
     }
     if (field.defenderSide.isSeeded) {
         if (!defender.hasAbility('Magic Guard')) {

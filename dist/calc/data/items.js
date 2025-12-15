@@ -545,7 +545,28 @@ var ZA_MEGA_STONES = {
     Victreebelite: 'Victreebel',
     Zygardite: 'Zygarde'
 };
-var SV = SS.concat(__spreadArray(__spreadArray([], __read(Object.keys(ZA_MEGA_STONES)), false), [
+var ZA_DLC_MEGA_STONES = {
+    'Absolite Z': 'Absol',
+    Baxcalibrite: 'Baxcalibur',
+    Chimechite: 'Chimecho',
+    Crabominite: 'Crabominable',
+    Darkranite: 'Darkrai',
+    'Garchompite Z': 'Garchomp',
+    Glimmoranite: 'Glimmora',
+    Golisopite: 'Golisopod',
+    Golurkite: 'Golurk',
+    Heatranite: 'Heatran',
+    'Lucarionite Z': 'Lucario',
+    Magearnite: 'Magearna',
+    Meowsticite: 'Meowstic',
+    'Raichunite X': 'Raichu',
+    'Raichunite Y': 'Raichu',
+    Scovillainite: 'Scovillain',
+    Staraptite: 'Staraptor',
+    Tatsugirinite: 'Tatsugiri',
+    Zeraorite: 'Zeraora'
+};
+var SV = SS.concat(__spreadArray(__spreadArray(__spreadArray([], __read(Object.keys(ZA_MEGA_STONES)), false), __read(Object.keys(ZA_DLC_MEGA_STONES)), false), [
     'Adamant Crystal',
     'Auspicious Armor',
     'Ability Shield',

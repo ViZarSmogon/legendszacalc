@@ -1168,6 +1168,17 @@ function getMoveDetails(moveInfo, opts) {
 		}
 		if (isStellar) overrides.self = {boosts: {atk: -1, spa: -1}};
 	}
+	if (moveName === 'Volt Tackle') {
+		// custom logic for stellar type tera blast
+		var isMegaX = pokemon.name === 'Raichu-Mega-X';
+		var statRaise = moveInfo.find('.move-times');
+		var raiseStats = statRaise.is(':visible');
+		if (isMegaX !== raiseStats) {
+			// update stat drop dropdown here
+			if (isMegaX) statRaise.show(); else statRaise.hide();
+		}
+		if (isMegaX) overrides.self = {boosts: {atk: 1}};
+	}
 	if (gen >= 4) overrides.category = moveInfo.find(".move-cat").val();
 	return new calc.Move(gen, moveName, {
 		ability: opts.ability, item: opts.item, useZ: isZMove, species: opts.species, isCrit: isCrit, hits: hits,
