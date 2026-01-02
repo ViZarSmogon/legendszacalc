@@ -10194,7 +10194,7 @@ var ZA_PATCH = {
         },
         weightkg: 90.0,
         abilities: {
-            '0': 'Bulletproof'
+            '0': 'Grassy Surge'
         },
         baseSpecies: 'Chesnaught'
     },
@@ -10222,7 +10222,7 @@ var ZA_PATCH = {
         },
         weightkg: 42.3,
         abilities: {
-            '0': 'Serene Grace'
+            '0': 'Prankster'
         },
         baseSpecies: 'Clefable'
     },
@@ -10297,7 +10297,7 @@ var ZA_PATCH = {
         },
         weightkg: 290.0,
         abilities: {
-            '0': 'Soul-Heart'
+            '0': 'Sheer Force'
         },
         baseSpecies: 'Dragonite'
     },
@@ -10316,7 +10316,7 @@ var ZA_PATCH = {
         },
         weightkg: 240.5,
         abilities: {
-            '0': 'Drizzle'
+            '0': 'Adaptability'
         },
         baseSpecies: 'Drampa'
     },
@@ -10372,7 +10372,7 @@ var ZA_PATCH = {
         },
         weightkg: 60.0,
         abilities: {
-            '0': 'Mold Breaker'
+            '0': 'Sand Rush'
         },
         baseSpecies: 'Excadrill'
     },
@@ -10464,7 +10464,7 @@ var ZA_PATCH = {
         bs: { 'hp': 83, 'at': 90, 'df': 105, 'sa': 150, 'sd': 96, 'sp': 101 },
         weightkg: 77.0,
         abilities: {
-            '0': 'Rocky Payload'
+            '0': 'Levitate'
         },
         baseSpecies: 'Glimmora'
     },
@@ -10473,7 +10473,7 @@ var ZA_PATCH = {
         bs: { 'hp': 75, 'at': 150, 'df': 175, 'sa': 70, 'sd': 120, 'sp': 40 },
         weightkg: 148.0,
         abilities: {
-            '0': 'Regenerator'
+            '0': 'Heatproof'
         },
         baseSpecies: 'Golisopod'
     },
@@ -10520,7 +10520,7 @@ var ZA_PATCH = {
         },
         weightkg: 25.0,
         abilities: {
-            '0': 'Hawlucha'
+            '0': 'Stamina'
         },
         baseSpecies: 'Hawlucha'
     },
@@ -10529,7 +10529,7 @@ var ZA_PATCH = {
         bs: { 'hp': 91, 'at': 120, 'df': 106, 'sa': 175, 'sd': 141, 'sp': 67 },
         weightkg: 570.0,
         abilities: {
-            '0': 'Earth Eater'
+            '0': 'Filter'
         },
         baseSpecies: 'Heatran'
     },
@@ -10771,7 +10771,7 @@ var ZA_PATCH = {
         bs: { 'hp': 88, 'at': 157, 'df': 75, 'sa': 147, 'sd': 80, 'sp': 153 },
         weightkg: 44.5,
         abilities: {
-            '0': 'Iron Fist'
+            '0': 'Volt Absorb'
         },
         baseSpecies: 'Zeraora'
     },
